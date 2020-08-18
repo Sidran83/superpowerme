@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Super power: <%= @superpower.name %></h1>
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <table class="table table-bordered">
+        <tbody>
+          <thead>
+            <th>description</th>
+            <th>level</th>
+            <th>price per day</th>
+            <th>category</th>
+          </thead>
+            <tr>
+              <td><%= @superpower.description %></td>
+              <td><%= @superpower.level %>/5</td>
+              <td><%= @superpower.fee %>$</td>
+              <td><%= @superpower.category.name %></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <%= link_to "< back",  superpowers_path, class: "btn btn-warning"  %>
+</div>
+
