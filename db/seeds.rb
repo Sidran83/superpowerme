@@ -75,7 +75,7 @@ superpower6.user = user13
 superpower6.category = category4
 superpower6.save!
 
-superpower7 = Superpower.new(name: "Super dev!", description: "Cook everything super fastEnter the matrix and code everything you want!", level: 4, fee: 250)
+superpower7 = Superpower.new(name: "Super dev!", description: "Enter the matrix and code everything you want!", level: 4, fee: 250)
 superpower7.user = user14
 superpower7.category = category2
 superpower7.save!

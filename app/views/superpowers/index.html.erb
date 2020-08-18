@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Super powers!</h1>
+  <div class="row">
+    <div class="col 4">
+      <table class="table table-bordered">
+        <tbody>
+          <thead>
+            <th>super powers' list</th>
+          </thead>
+            <% @superpowers.each do |superpower| %>
+              <tr>
+                <td><%= link_to superpower.name, superpower_path(superpower) %></td>
+              </tr>
+            <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
