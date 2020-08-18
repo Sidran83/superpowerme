@@ -4,11 +4,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 15px 80px;
 }
 
-.card-category {
-  width: 450px;
+
+.card-category-1 {
+  width: 750px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3F62F6;
+  font-size: 32px;
+}
+
+
+
+.card-category-2 {
+  width: 480px;
   height: 300px;
   display: flex;
   align-items: center;
