@@ -7,10 +7,16 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <%= simple_form_for @categories do |f| %>
-      <%= f.association :categories %>
-      <%= f.button :submit, class: "btn btn-warning" %>
+      <div class="row">
+        <%= form_tag  superpowers_path, method: :get do %>
+        <%= select_tag :query, options_from_collection_for_select(Category.all, "id", "name"),
+          class: "form-control",
+          placeholder: " "
+        %>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
       <% end %>
+      </div>
+
 
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
