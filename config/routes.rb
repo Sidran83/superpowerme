@@ -9,7 +9,5 @@ Rails.application.routes.draw do
       resources :rentings, only: [:create]
     end
   # end
-
   resources :rentings, only: [:index, :show, :edit, :update, :destroy]
-
 end

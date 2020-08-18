@@ -3,6 +3,7 @@ class SuperpowersController < ApplicationController
   before_action :set_superpower, only: [:show]
 
   def index
+    # TODO if with params[:query]
     @superpowers = Superpower.all
   end
 
