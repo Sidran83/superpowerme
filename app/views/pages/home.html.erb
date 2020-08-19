@@ -1,31 +1,25 @@
-
-
-
-  <div class="category">
-        <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-          TRENDING
-        </div>
-
-        <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-          BEST SELLERS
-        </div>
-
-        <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-          FROM FAMOUS PEOPLE
-        </div>
+<!-- /home/sidran/Downloads/category_transportation.jpg
+/home/sidran/Downloads/category_dailylife.jpg
+/home/sidran/Downloads/animals_creatures.jpg
+ -->
+<div class="category">
+  <% categories = ['Daily Life', 'Arts & Culture', 'Animals & Creatures', 'Transportation', 'Almost legal'] %>
+  <% categories.each do |category| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  'background_images/cat_dailylife.jpg' %>)">
+      <%= "#{category}" %>
     </div>
-
-
+  <% end %>
+</div>
 
 
   <div class="category">
-      <div class="card-category-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  'background_images/cat_dailylife.jpg' %>)">
         Daily Life
       </div>
 
-      <div class="card-category-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+     <!--  <div class="card-category-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
         Arts & Culture
-      </div>
+      </div> -->
 
   </div>
 
