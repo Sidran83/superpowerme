@@ -29,6 +29,8 @@ user11 = User.create!(email: "thevoice@gmail.com", password: "password_user11", 
 user12 = User.create!(email: "passepartout@gmail.com", password: "password_user12", nickname: "Passe partout")
 user13 = User.create!(email: "hulk@gmail.com", password: "password_user13", nickname: "Hulk")
 user14 = User.create!(email: "neo@gmail.com", password: "password_user14", nickname: "Neo")
+user15 = User.create!(email: "buzz@gmail.com", password: "password_user15", nickname: "Buzz")
+user16 = User.create!(email: "speedster@gmail.com", password: "password_user16", nickname: "Speedster")
 
 puts "Users created!"
 
@@ -79,5 +81,15 @@ superpower7 = Superpower.new(name: "Super dev!", description: "Enter the matrix 
 superpower7.user = user14
 superpower7.category = category2
 superpower7.save!
+
+superpower8 = Superpower.new(name: "Buzz Lightyear", description: "To infinity... and beyond!", level: 4, fee: 700)
+superpower8.user = user15
+superpower8.category = category1
+superpower8.save!
+
+superpower9 = Superpower.new(name: "Speedster", description: "No more excuse, arrive on time", level: 3, fee: 200)
+superpower9.user = user16
+superpower9.category = category1
+superpower9.save!
 
 puts "superpowers created!"

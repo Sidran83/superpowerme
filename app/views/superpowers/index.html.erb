@@ -1,5 +1,17 @@
 <div class="container">
-  <h1>Super powers!</h1>
+
+<!--   <div class="category">
+    <% @categories.each do |category| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{category.url}" %>)">
+        <%= link_to category.name, superpowers_path %>
+      </div>
+    <% end %>
+  </div>
+
+ -->
+
+
+
   <div class="row">
     <div class="col 4">
       <table class="table table-bordered">
@@ -30,11 +42,23 @@
   </div>
 
 
-  <div class="cards-index"></div>
+  <div class="cards-index">
 
+    <div class="card-product">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-trip-infos">
+        <div>
+          <h2>Title here</h2>
+          <p>Short description here!</p>
+        </div>
 
+            <h2 class="card-trip-pricing">£99.99</h2>
+         <!--    <img src="" class="card-trip-user avatar-bordered" /> -->
 
-
+      </div>
+  </div>
 
 
 </div>
+
+
