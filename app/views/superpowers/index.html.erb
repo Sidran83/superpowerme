@@ -1,23 +1,23 @@
+
+
+
+
+
 <div class="container">
-  <h1>Super powers!</h1>
-  <div class="row">
-    <div class="col 4">
-      <table class="table table-bordered">
-        <tbody>
-          <thead>
-            <th>super powers' list</th>
-          </thead>
-            <th>name</th>
-            <th>category</th>
-            <% @superpowers.each do |superpower| %>
-              <tr>
-                <td><%= link_to superpower.name, superpower_path(superpower) %></td>
-                <td><%= superpower.category.name %></td>
-              </tr>
-            <% end %>
-        </tbody>
-      </table>
-    </div>
+  <% @categories.each do |category| %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{category.url}" %>">
+  <%= @superpowers.first.category.name %>
   </div>
-  <%= link_to "< back to homepage", root_path, class: "btn btn-warning"  %>
+   <% end %>
+  <% @superpowers.each do |superpower| %>
+    <div class="card-product">
+      <img src="<%= image_path superpower.url %>" />
+      <div class="card-trip-infos">
+        <h2><%= superpower.name %></h2>
+        <p><%= superpower.description %></p>
+      </div>
+      <h2 class="card-trip-pricing"><%= superpower.fee %> €</h2>
+    </div>
+  <% end %>
 </div>
+
