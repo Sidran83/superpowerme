@@ -47,16 +47,17 @@
 .card-trip-infos {
   padding: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-
+  align-items: flex-start;
+  flex-grow: 1;
 }
 
 .card-trip-user {
-  position: relative;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+  // position: relative;
+  // right: 16px;
+  // top: -20px;
+  // width: 40px;
 }
 
 // .avatar-bordered {
@@ -70,8 +71,11 @@
 // }
 
 .card-trip-pricing {
-  position: relative;
-  left: 500px;
-  top: 50px;
-  font-size: 16px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  // position: relative;
+  // left: 500px;
+  // top: 50px;
+  // font-size: 16px;
 }

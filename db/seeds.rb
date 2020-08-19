@@ -47,47 +47,47 @@ puts "categories created!"
 
 puts "Creating superpowers..."
 
-superpower1 = Superpower.new(name: "Super fast cooker", description: "Cook everything super fast", level: 3, fee: 100)
+superpower1 = Superpower.new(name: "Super fast cooker", description: "Cook everything super fast", level: 3, fee: 100, url: "superpower_teleportation.jpg")
 superpower1.user = user8
 superpower1.category = category3
 superpower1.save!
 
-superpower2 = Superpower.new(name: "Fast and furious", description: "Teleport you anywhere you want", level: 5, fee: 5000)
+superpower2 = Superpower.new(name: "Fast and furious", description: "Teleport you anywhere you want", level: 5, fee: 5000, url: "superpower_teleportation.jpg")
 superpower2.user = user9
 superpower2.category = category1
 superpower2.save!
 
-superpower3 = Superpower.new(name: "Never hangovered!", description: "Drink as you want without regrets the day after", level: 4 , fee: 150)
+superpower3 = Superpower.new(name: "Never hangovered!", description: "Drink as you want without regrets the day after", level: 4 , fee: 150, url: "superpower_teleportation.jpg")
 superpower3.user = user10
 superpower3.category = category3
 superpower3.save!
 
-superpower4 = Superpower.new(name: "Sing in tune", description: "Sing everything you want perfectly!", level: 2, fee: 100)
+superpower4 = Superpower.new(name: "Sing in tune", description: "Sing everything you want perfectly!", level: 2, fee: 100, url: "superpower_teleportation.jpg")
 superpower4.user = user11
 superpower4.category = category2
 superpower4.save!
 
-superpower5 = Superpower.new(name: "Wallbreaker", description: "Forgot your keys? I'm the solution!", level: 4, fee: 200)
+superpower5 = Superpower.new(name: "Wallbreaker", description: "Forgot your keys? I'm the solution!", level: 4, fee: 200, url: "superpower_passmurailles.jpg")
 superpower5.user = user12
 superpower5.category = category1
 superpower5.save!
 
-superpower6 = Superpower.new(name: "Hulk you up", description: "Lost your muscles? I rent you mine!", level: 1, fee: 50)
+superpower6 = Superpower.new(name: "Hulk you up", description: "Lost your muscles? I rent you mine!", level: 1, fee: 50, url: "superpower_teleportation.jpg")
 superpower6.user = user13
 superpower6.category = category4
 superpower6.save!
 
-superpower7 = Superpower.new(name: "Super dev!", description: "Enter the matrix and code everything you want!", level: 4, fee: 250)
+superpower7 = Superpower.new(name: "Super dev!", description: "Enter the matrix and code everything you want!", level: 4, fee: 250, url: "superpower_teleportation.jpg")
 superpower7.user = user14
 superpower7.category = category2
 superpower7.save!
 
-superpower8 = Superpower.new(name: "Buzz Lightyear", description: "To infinity... and beyond!", level: 4, fee: 700)
+superpower8 = Superpower.new(name: "Buzz Lightyear", description: "To infinity... and beyond!", level: 4, fee: 700, url: "superpower_buzz_lightyear.jpg")
 superpower8.user = user15
 superpower8.category = category1
 superpower8.save!
 
-superpower9 = Superpower.new(name: "Speedster", description: "No more excuse, arrive on time", level: 3, fee: 200)
+superpower9 = Superpower.new(name: "Speedster", description: "No more excuse, arrive on time", level: 3, fee: 200, url: "superpower_speedster.jpg")
 superpower9.user = user16
 superpower9.category = category1
 superpower9.save!

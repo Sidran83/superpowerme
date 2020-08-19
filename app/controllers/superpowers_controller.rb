@@ -5,6 +5,7 @@ class SuperpowersController < ApplicationController
   def index
     # TODO if with params[:query]
     @superpowers = Superpower.all
+    @categories = Category.all
   end
 
   def show

@@ -1,16 +1,5 @@
 <div class="container">
 
-<!--   <div class="category">
-    <% @categories.each do |category| %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{category.url}" %>)">
-        <%= link_to category.name, superpowers_path %>
-      </div>
-    <% end %>
-  </div>
-
- -->
-
-
 
   <div class="row">
     <div class="col 4">
@@ -37,28 +26,22 @@
 
 
 <div class="container">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  Transportation
+  <% @categories.each do |category| %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{category.url}" %>">
+  <%= @superpowers.first.category.name %>
   </div>
-
-
-  <div class="cards-index">
-
+   <% end %>
+  <% @superpowers.each do |superpower| %>
     <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <img src="<%= image_path superpower.url %>" />
       <div class="card-trip-infos">
-        <div>
-          <h2>Title here</h2>
-          <p>Short description here!</p>
-        </div>
-
-            <h2 class="card-trip-pricing">£99.99</h2>
-         <!--    <img src="" class="card-trip-user avatar-bordered" /> -->
-
+        <h2><%= superpower.name %></h2>
+        <p><%= superpower.description %></p>
       </div>
-  </div>
-
-
+      <h2 class="card-trip-pricing"><%= superpower.fee %> €</h2>
+    </div>
+  <% end %>
 </div>
+
 
 
