@@ -2,7 +2,7 @@
 <div class="category">
   <% @categories.each do |category| %>
       <div class="card-category-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{category.url}" %>)">
-      <%= link_to category.name, superpowers_path %>
+      <%= link_to category.name, superpowers_path(category_id: category.id) %>
     </div>
   <% end %>
 </div>

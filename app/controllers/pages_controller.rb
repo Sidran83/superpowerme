@@ -3,5 +3,13 @@ class PagesController < ApplicationController
 
   def home
     @categories = Category.all
+
   end
+
+  # private
+
+  # def category_params
+  #   params.require(:category).permit(:name, :url)
+  # end
 end
+
