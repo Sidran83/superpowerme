@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 80px;
+  padding: 5px 80px;
 }
 
 
@@ -16,8 +16,12 @@
   justify-content: center;
   color: #3F62F6;
   font-size: 32px;
+  background-position: center;
+  background-size: cover;
+  margin: 15px;
+  text-align: center;
+  text-shadow: black;
 }
-
 
 
 .card-category-2 {

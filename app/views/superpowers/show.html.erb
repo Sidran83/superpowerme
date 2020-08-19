@@ -20,5 +20,13 @@
       </table>
     </div>
   </div>
-  <%= link_to "< back", superpowers_path, class: "btn btn-warning"  %>
+
+  <div class="container">
+    <%= simple_form_for [@superpower, @renting] do |f| %>
+      <%= f.input :start_date %>
+      <%= f.input :end_date %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+  <%= link_to "< back",  superpowers_path, class: "btn btn-warning"  %>
 </div>
