@@ -1,7 +1,4 @@
-<!-- /home/sidran/Downloads/category_transportation.jpg
-/home/sidran/Downloads/category_dailylife.jpg
-/home/sidran/Downloads/animals_creatures.jpg
- -->
+
 <div class="category">
   <% categories = ['Daily Life', 'Arts & Culture', 'Animals & Creatures', 'Transportation', 'Almost legal'] %>
   <% categories.each do |category| %>
@@ -12,47 +9,7 @@
 </div>
 
 
-  <div class="category">
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  'background_images/cat_dailylife.jpg' %>)">
-        Daily Life
-      </div>
-
-     <!--  <div class="card-category-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-        Arts & Culture
-      </div> -->
-
-  </div>
-
-
-    <div class="category">
-      <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-        Animals & Creature
-      </div>
-
-      <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-        Transportation
-      </div>
-
-      <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-        Almost legal
-      </div>
-  </div>
-
-<%= cl_image_tag("almost_legal_oh3olu",
-      width: 400, height: 300, crop: :fill) %>
-<%= cl_image_tag("animals_creatures_xftvc7",
-      width: 400, height: 300, crop: :fill) %>
-<%= cl_image_tag("category_dailylife_mhhsrd",
-      width: 400, height: 300, crop: :fill) %>
-<%= cl_image_tag("adele-gig-t_ww7mry",
-      width: 400, height: 300, crop: :fill) %>
-<%= cl_image_tag("category_transportation_quku8w",
-      width: 400, height: 300, crop: :fill) %>
-
-
-
-
-  <div class="footer">
+<div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-github"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
