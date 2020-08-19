@@ -8,6 +8,7 @@ class SuperpowersController < ApplicationController
   end
 
   def show
+    @renting = Renting.new
   end
 
   private
