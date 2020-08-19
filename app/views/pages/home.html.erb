@@ -1,9 +1,8 @@
 
 <div class="category">
-  <% categories = ['Daily Life', 'Arts & Culture', 'Animals & Creatures', 'Transportation', 'Almost legal'] %>
-  <% categories.each do |category| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  'background_images/cat_dailylife.jpg' %>)">
-      <%= "#{category}" %>
+  <% @categories.each do |category| %>
+      <div class="card-category-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{category.url}" %>)">
+      <%= category.name %>
     </div>
   <% end %>
 </div>
@@ -19,7 +18,7 @@
   </div>
   <div class="footer-copyright">
     Superpower Me declines all responsibilities in case of illegal activities, accidents and/or death
-  </div>
+  </div>'background_images/
 </div>
 
 
