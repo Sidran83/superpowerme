@@ -1,7 +1,7 @@
 class RentingsController < ApplicationController
 
   def index
-    @rentings = Renting.all
+    @rentings = Renting.all.order(updated_at: :desc)
   end
 
   def show
@@ -16,14 +16,13 @@ class RentingsController < ApplicationController
 
   def create
     @renting = Renting.new(rentings_params)
-    # total_price = @renting_duration * :fee
     @superpower = Superpower.find(params[:superpower_id])
     @renting.superpower = @superpower
     @renting.set_total_price(@superpower.fee)
     @renting.user = current_user
 
     if @renting.save
-      redirect_to rentings_path(@renting)
+      redirect_to superpower_rentings_path(@superpower)
     else
       render 'superpowers/show'
     end
@@ -31,12 +30,16 @@ class RentingsController < ApplicationController
 
   def edit
     @renting = Renting.find(params[:id])
+
   end
 
   def update
     @renting = Renting.find(params[:id])
-    @renting.update(rentings_params)
-    redirect_to rentings_path(@renting)
+    @superpower = @renting.superpower
+    if @renting.update(rentings_params)
+      @renting.set_total_price(@superpower.fee)
+    end
+    redirect_to superpower_rentings_path(@superpower)
   end
 
   def destroy

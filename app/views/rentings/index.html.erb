@@ -1,20 +1,21 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://unsplash.com/photos/xBFTjrMIC0c);">
-  <h1>My Rentings</h1>
-</div>
+<h1>My Rentings</h1>
 
-<table>
-  <tbody>
-    <% @rentings.each do |renting| %>
-      <tr>
-        <td><%= renting.superpower.name %></td>
-        <td><%= renting.start_date %></td>
-        <td><%= renting.end_date %></td>
-        <td><%= renting.total_price %></td>
-        <td><%= link_to "edit the renting",  edit_renting_path(renting), class: "btn btn-success" %></td>
-        <td><%= link_to "delete the renting", renting_path(renting), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" }%></td>
-      </tr>
+<% @rentings.each do |renting| %>
+  <div class="card-trip">
+    <%= image_tag "Superpower.png" %>
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= renting.superpower.name %></h2>
+          <p><%= renting.start_date %></p>
+          <p><%= renting.end_date %></p>
+        </div>
+        <h2 class="card-trip-pricing">Total price : <%= renting.total_price %>€</h2>
+          <p><%= link_to "edit the renting",  edit_renting_path(renting), class: "btn btn-success" %></td>
+          <p><%= link_to "delete the renting", renting_path(renting), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" }%></td>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+       </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+
 
 <%= link_to "back to homepage",  root_path, class: "btn btn-warning"  %>

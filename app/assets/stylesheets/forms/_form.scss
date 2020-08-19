@@ -1,0 +1,27 @@
+.show-form {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+
+
+  // width: 400px;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  cursor: text; /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+  user-select: none;
+  width: 100%;
+  .simple_form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .btn {
+    height: 50%;
+  }
+}
