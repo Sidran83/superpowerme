@@ -36,11 +36,11 @@ puts "Users created!"
 
 puts "Creating categories..."
 
-category1 = Category.create!(name: "Transportation")
-category2 = Category.create!(name: "Art and culture")
-category3 = Category.create!(name: "Daily life")
-category4 = Category.create!(name: "Animals and creatures")
-category5 = Category.create!(name: "Almost legal")
+category1 = Category.create!(name: "Transportation", url: "cat_transportation.jpg")
+category2 = Category.create!(name: "Art and culture", url: "cat_arts_and_culture.jpg")
+category3 = Category.create!(name: "Daily life", url: "cat_dailylife.jpg")
+category4 = Category.create!(name: "Animals and creatures", url: "cat_animals_creatures.jpg")
+category5 = Category.create!(name: "Almost legal", url: "cat_almost_legal.jpg")
 
 puts "categories created!"
 

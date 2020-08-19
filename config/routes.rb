@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # resources :categories, only: [:index, :show] do
 
     resources :superpowers,  only: [:index, :show] do
-      resources :rentings, only: [:create]
+      resources :rentings, only: [:new, :create, :index]
     end
   # end
   resources :rentings, only: [:index, :show, :edit, :update, :destroy]
