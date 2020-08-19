@@ -24,7 +24,7 @@
     <%= simple_form_for [@superpower, @renting] do |f| %>
       <%= f.input :start_date %>
       <%= f.input :end_date %>
-      <%= f.submit, url: %>
+      <%= f.submit %>
     <% end %>
   </div>
   <%= link_to "< back",  superpowers_path, class: "btn btn-warning"  %>

@@ -9,20 +9,24 @@ class RentingsController < ApplicationController
     @renting = Renting.new
   end
 
-  def new
-    @superpower = Superpower.find(params[:superpower_id])
-    @renting = Renting.new
-  end
+  # def new
+  #   @superpower = Superpower.find(params[:superpower_id])
+  #   @renting = Renting.new
+  # end
 
   def create
     @renting = Renting.new(rentings_params)
+    # total_price = @renting_duration * :fee
     @superpower = Superpower.find(params[:superpower_id])
     @renting.superpower = @superpower
-      if @renting.save
-        redirect_to superpower_path(@superpower)
-      else
-        render :new
-      end
+    @renting.set_total_price(@superpower.fee)
+    @renting.user = current_user
+
+    if @renting.save
+      redirect_to rentings_path(@renting)
+    else
+      render 'superpowers/show'
+    end
   end
 
   def edit
@@ -32,13 +36,13 @@ class RentingsController < ApplicationController
   def update
     @renting = Renting.find(params[:id])
     @renting.update(rentings_params)
-    redirect_to superpower_path(@superpower)
+    redirect_to rentings_path(@renting)
   end
 
   def destroy
     @renting = Renting.find(params[:id])
     @renting.destroy
-    redirect_to superpower_path(@renting.superpower)
+    redirect_to rentings_path(@renting)
   end
 
   private
