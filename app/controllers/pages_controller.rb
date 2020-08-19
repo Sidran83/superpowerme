@@ -6,10 +6,5 @@ class PagesController < ApplicationController
 
   end
 
-  # private
-
-  # def category_params
-  #   params.require(:category).permit(:name, :url)
-  # end
 end
 
