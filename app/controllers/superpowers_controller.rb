@@ -3,8 +3,12 @@ class SuperpowersController < ApplicationController
   before_action :set_superpower, only: [:show]
 
   def index
-    # TODO if with params[:query]
-    @superpowers = Superpower.all
+    if params[:category_id]
+      @category = Category.find(params[:category_id])
+      @superpowers = @category.superpowers
+    else
+      @superpowers = Superpower.all
+    end
   end
 
   def show
