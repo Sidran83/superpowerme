@@ -8,6 +8,7 @@ class SuperpowersController < ApplicationController
       @superpowers = @category.superpowers
     else
       @superpowers = Superpower.all
+
     end
   end
 
