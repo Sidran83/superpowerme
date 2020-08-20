@@ -7,9 +7,12 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+
+
+
   <div class="row">
     <%= form_tag superpowers_path, method: :get, class: 'search-form' do%>
-    <%= select_tag :query, options_from_collection_for_select(Category.all, "id", "name"),
+    <%= select_tag :category_id, options_from_collection_for_select(Category.all, "id", "name"),
       class: "form-control",
       placeholder: " "
     %>
