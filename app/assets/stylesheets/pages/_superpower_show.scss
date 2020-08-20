@@ -2,28 +2,30 @@
   display: flex;
   margin-left: 0px;
   margin-right: 0px;
-  padding: 20px;
+  padding: 60px;
+  padding-top: 80px;
 }
 
 .left-column {
-  width: 50%;
-  height: 100vh;
+  width: 40%;
+  height: 70vh;
   object-fit: cover;
+  padding: 40px;
 }
 
 .right-column {
-  width: 50%;
-  height: 100vh;
-  padding: 60px;
+  width: 60%;
+  height: 70vh;
+  padding: 40px;
 }
 
 .superpower-description {
   border-bottom: 1px solid #43484D;
   margin-bottom: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .superpower-description h1 {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-size: 32px;
 }
 .superpower-description p {
@@ -31,7 +33,7 @@
 }
 
 .form-wrapper {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 // @media (max-width: 940px) {
