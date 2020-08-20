@@ -1,41 +1,28 @@
-<div class="container">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "Superpower.png" %>');">
-      <div class="container">
-        <h1>Super power: <%= @superpower.name %></h1>
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <table class="table table-bordered">
-          <tbody>
-            <thead>
-              <th>Description</th>
-              <th>Level</th>
-              <th>Price per day</th>
-              <th>Category</th>
-            </thead>
-              <tr>
-                <td><%= @superpower.description %></td>
-                <td><%= @superpower.level %>/5</td>
-                <td><%= @superpower.fee %>€</td>
-                <td><%= @superpower.category.name %></td>
-              </tr>
-          </tbody>
-        </table>
-      </div>
+<div class="container-superpower">
+  <!-- <div class="left-column"> -->
+  <%= image_tag @superpower.url, class: "left-column" %>
+<!--   </div> -->
+  <!-- <div class="left-column" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path @superpower.url %>); background-size: cover">
+  </div> -->
+
+  <div class="right-column">
+    <div class="superpower-description">
+      <h1>Super power : <%= @superpower.name %></h1>
+      <p>Description : <%= @superpower.description %></p>
+      <p>Price : <%= @superpower.fee %>€ / day</p>
+
     </div>
 
-    <div class="container">
-      <div class= "show-form">
-        <%= simple_form_for [@superpower, @renting] do |f| %>
-          <%= f.input :start_date %>
-          <%= f.input :end_date %>
-          <%= f.submit class: "btn btn-primary" %>
-        <% end %>
-      </div>
+    <div class="form-wrapper">
+      <h2>Book your Super power: </h2>
+
+      <%= simple_form_for [@superpower, @renting] do |f| %>
+        <%= f.input :start_date, as: :string, required: false, input_html: { id: "range_start" } %>
+        <%= f.input :end_date, as: :string, required: false, input_html: { id: "range_end" } %>
+        <%= f.button :submit, "Go Superpower", class: "btn btn-primary" %>
+      <% end %>
+
     </div>
   </div>
 </div>
