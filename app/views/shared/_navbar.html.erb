@@ -7,9 +7,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
-
-
   <div class="row">
     <%= form_tag superpowers_path, method: :get, class: 'search-form' do%>
     <%= select_tag :category_id, options_from_collection_for_select(Category.all, "id", "name"),
@@ -22,7 +19,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <%= link_to "Home", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
