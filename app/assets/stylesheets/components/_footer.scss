@@ -6,7 +6,8 @@
   height: 50px;
   padding: 10px 80px;
   color: #3F62F6;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }
 
@@ -24,3 +25,5 @@
 .footer-links a:hover {
   opacity: 1;
 }
+
+
