@@ -1,8 +1,9 @@
 <div class="container">
-
+  <% if @category.present? %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{@category.url}" %>">
     <%= @category.name %>
   </div>
+  <% end %>
   <% @superpowers.each do |superpower| %>
     <%= link_to superpower_path(superpower) do %>
       <div class="card-product">
