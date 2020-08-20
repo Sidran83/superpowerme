@@ -1,8 +1,8 @@
 <h1>My Rentings</h1>
 
-<div class="containerrentings" style= "display: flex">
+<div class="containerrentings">
   <div class="row">
-    <div class="col">
+    <div class="col-6 col-md-4">
       <% @rentings.each do |renting| %>
         <div class="card-renting">
           <%= image_tag "Superpower.png" %>
@@ -13,9 +13,8 @@
               <p><%= renting.end_date %></p>
             </div>
             <h2 class="card-renting-pricing">Total price : <%= renting.total_price %>€</h2>
-            <p><%= link_to "edit the renting",  edit_renting_path(renting), class: "btn btn-success" %></td>
-            <p><%= link_to "delete the renting", renting_path(renting), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" }%></td>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-renting-user avatar-bordered" />
+            <%= link_to "edit the renting",  edit_renting_path(renting), class: "btn btn-success" %>
+            <%= link_to "delete the renting", renting_path(renting), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" }%>
           </div>
         </div>
       <% end %>

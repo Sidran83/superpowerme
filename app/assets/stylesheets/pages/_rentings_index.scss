@@ -1,9 +1,11 @@
 .containerrentings {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-renting {
-  overflow: hidden;
+  // overflow: hidden;
   background: white;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
   width: 700px;
@@ -28,18 +30,10 @@
   margin: 0;
 }
 
-
 .card-renting .card-renting-infos {
   padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-}
-
-.card-renting-infos .card-renting-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
 }
