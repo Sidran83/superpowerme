@@ -1,4 +1,27 @@
 
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "Superpower.png" %>');">
+    <div class="container">
+      <h1>Superpower your life</h1>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="category">
+  <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    Our favs
+  </div>
+
+  <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    From famous people
+  </div>
+
+  <div class="card-category-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    For kids
+  </div>
+</div>
+
+ -->
+
 <div class="category">
   <% @categories.each do |category| %>
       <div class="card-category-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path  "background_images/#{category.url}" %>)">
@@ -6,6 +29,3 @@
     </div>
   <% end %>
 </div>
-
-
-
