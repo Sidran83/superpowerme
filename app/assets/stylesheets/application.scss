@@ -15,3 +15,6 @@
 @import "pages/index";
 @import "forms/index";
 
+.container {
+  min-height: calc(100vh - 50px);
+}
