@@ -47,7 +47,7 @@ puts "categories created!"
 
 puts "Creating superpowers..."
 
-superpower1 = Superpower.new(name: "Super fast cooker", description: "Cook everything super fast", level: 3, fee: 100, url: "superpower_teleportation.jpg")
+superpower1 = Superpower.new(name: "Super fast cooker", description: "Cook everything super fast", level: 3, fee: 100, url: "superfastcooker.jpg")
 superpower1.user = user8
 superpower1.category = category3
 superpower1.save!
@@ -57,12 +57,12 @@ superpower2.user = user9
 superpower2.category = category1
 superpower2.save!
 
-superpower3 = Superpower.new(name: "Never hangovered!", description: "Drink as you want without regrets the day after", level: 4 , fee: 150, url: "superpower_teleportation.jpg")
+superpower3 = Superpower.new(name: "Never hangovered!", description: "Drink as you want without regrets the day after", level: 4 , fee: 150, url: "neverhangovered.jpg")
 superpower3.user = user10
 superpower3.category = category3
 superpower3.save!
 
-superpower4 = Superpower.new(name: "Sing in tune", description: "Sing everything you want perfectly!", level: 2, fee: 100, url: "superpower_teleportation.jpg")
+superpower4 = Superpower.new(name: "Sing in tune", description: "Sing everything you want perfectly!", level: 2, fee: 100, url: "singintune.jpg")
 superpower4.user = user11
 superpower4.category = category2
 superpower4.save!
@@ -72,12 +72,12 @@ superpower5.user = user12
 superpower5.category = category1
 superpower5.save!
 
-superpower6 = Superpower.new(name: "Hulk you up", description: "Lost your muscles? I rent you mine!", level: 1, fee: 50, url: "superpower_teleportation.jpg")
+superpower6 = Superpower.new(name: "Hulk you up", description: "Lost your muscles? I rent you mine!", level: 1, fee: 50, url: "hulkyouup.jpg")
 superpower6.user = user13
 superpower6.category = category4
 superpower6.save!
 
-superpower7 = Superpower.new(name: "Super dev!", description: "Enter the matrix and code everything you want!", level: 4, fee: 250, url: "superpower_teleportation.jpg")
+superpower7 = Superpower.new(name: "Super dev!", description: "Enter the matrix and code everything you want!", level: 4, fee: 250, url: "superdev.jpg")
 superpower7.user = user14
 superpower7.category = category2
 superpower7.save!
