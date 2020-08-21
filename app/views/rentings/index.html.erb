@@ -13,9 +13,14 @@
         <p> End : <%= renting.end_date %></p>
         </div>
         <div class="card-button">
-        <p><%= link_to "Edit the renting",  edit_renting_path(renting), class: "btn btn-outline-info btn-sm" %></p>
-        <button id="sweet-alert" class="btn-outline-danger btn-sm">Delete the renting</button>
-        <%= link_to "", renting_path(renting), method: :delete, id: "delete-link"%>
+        <p>
+          <%= link_to "Edit the renting",  edit_renting_path(renting), class: "btn btn-outline-info btn-sm" %>
+
+          </p>
+        <p>
+          <button id="sweet-alert" class="btn-outline-danger btn-sm">Delete the renting</button>
+       <%= link_to "", renting_path(renting), method: :delete, id: "delete-link", as: :hidden %>
+          </p>
         </div>
       </div>
     <% end %>
