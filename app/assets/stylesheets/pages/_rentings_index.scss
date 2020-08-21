@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
 }
 
 .card-renting {
   background: white;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  width: 700px;
-  margin : 40px;
+  width: 1000px;
+  margin: 20px;
 }
 
 .card-renting > img {
@@ -19,21 +18,31 @@
 }
 
 .card-renting h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+}
+
+.card-renting h3 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  padding: 10px;
 }
 
 .card-renting p {
   font-size: 12px;
-  opacity: .7;
   margin: 0;
+  padding: 10px;
 }
 
-.card-renting .card-renting-infos {
-  padding: 16px;
+.card-button {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+  padding: 10px;
+}
+
+.card-renting-details {
+  display: flex;
+  padding: 10px;
 }
