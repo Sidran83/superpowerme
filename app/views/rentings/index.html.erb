@@ -14,15 +14,13 @@
             </div>
             <h2 class="card-renting-pricing">Total price : <%= renting.total_price %>€</h2>
             <p><%= link_to "edit the renting",  edit_renting_path(renting), class: "btn btn-success" %></td>
-            <p><%= link_to "delete the renting", renting_path(renting), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" }%></td>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-renting-user avatar-bordered" />
+             <button id="sweet-alert" class="btn btn-danger">Delete the renting</button>
+          <%= link_to "", renting_path(renting), method: :delete, id: "delete-link"%>
           </div>
-        </div>
       <% end %>
     </div>
-  </div>
-</div>
 <div class="containerrentings">
 <%= link_to "back to homepage",  root_path, class: "btn btn-warning"  %>
 </div>
+
 

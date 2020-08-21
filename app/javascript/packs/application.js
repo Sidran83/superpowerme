@@ -34,3 +34,20 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+
+
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+initSweetalert('#sweet-alert', {
+  title: "Are you sure?",
+  text: "This action cannot be reversed",
+  icon: "warning",
+  buttons: ["Cancel", "Continue"]
+}, (value) => {
+  if (value) {
+    const link = document.querySelector('#delete-link');
+    link.click();
+  };
+});
+
