@@ -1,11 +1,22 @@
-<div class="container">
-  <div class="form-wrapper" style="width: 400px; margin: 0 auto; padding:60px;">
-    <h2>Edit your renting</h2>
+<div class="container-superpower">
+  <%= image_tag @superpower.url, class: "left-column" %>
 
-    <%= simple_form_for [@superpower, @renting] do |f| %>
-      <%= f.input :start_date, as: :string, required: false, input_html: { id: "range_start" } %>
-      <%= f.input :end_date, as: :string, required: false, input_html: { id: "range_end" } %>
-      <%= f.button :submit, "Go Superpower", class: "btn btn-primary" %>
-    <% end %>
+  <div class="right-column">
+    <div class="superpower-description">
+      <h1>Super power : <%= @superpower.name %></h1>
+      <p>Description : <%= @superpower.description %></p>
+      <p>Price : <%= @superpower.fee %>€ / day</p>
+
+    </div>
+
+    <div class="form-wrapper">
+      <h2>Edit your renting : </h2>
+
+      <%= simple_form_for [@renting] do |f| %>
+        <%= f.input :start_date, as: :string, required: false, input_html: { id: "range_start" } %>
+        <%= f.input :end_date, as: :string, required: false, input_html: { id: "range_end" } %>
+        <%= f.button :submit, "Go Superpower !", class: "btn btn-primary" %>
+      <% end %>
+    </div>
   </div>
 </div>

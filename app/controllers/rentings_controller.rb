@@ -30,7 +30,7 @@ class RentingsController < ApplicationController
 
   def edit
     @renting = Renting.find(params[:id])
-    # @superpower = @renting.superpower
+    @superpower = @renting.superpower
 
   end
 

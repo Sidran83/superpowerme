@@ -2,7 +2,7 @@
 
 <div class="containerrentings">
   <div class="row">
-    <div class="col-6 col-md-4">
+    <div class="col-12 col-md-6">
       <% @rentings.each do |renting| %>
         <div class="card-renting">
           <%= image_tag "Superpower.png" %>
@@ -13,8 +13,8 @@
               <p><%= renting.end_date %></p>
             </div>
             <h2 class="card-renting-pricing">Total price : <%= renting.total_price %>€</h2>
-            <%= link_to "edit the renting",  edit_renting_path(renting), class: "btn btn-success" %>
-            <%= link_to "delete the renting", renting_path(renting), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" }%>
+            <p><%= link_to "Edit the renting",  edit_renting_path(renting), class: "btn btn-outline-info btn-sm" %></p>
+            <p><%= link_to "Delete the renting", renting_path(renting), class: "btn btn-outline-danger btn-sm", method: :delete, data: { confirm: "Are you sure?" }%></p>
           </div>
         </div>
       <% end %>
@@ -23,6 +23,6 @@
 </div>
 
 <div class="containerrentings">
-<%= link_to "back to homepage",  root_path, class: "btn btn-warning"  %>
+<%= link_to "Back to homepage",  root_path, class: "btn btn-primary"  %>
 </div>
 
