@@ -14,23 +14,23 @@ puts "DB destroyed!"
 
 puts "Creating users ...."
 
-user1 = User.create!(email: "murielle@gmail.com", password: "password_user1", nickname: "Mumu")
-user2 = User.create!(email: "richard@gmail.com", password: "password_password_user2", nickname: "Riton")
-user3 = User.create!(email: "kevin@gmail.com", password: "password_user3", nickname: "Kev")
-user4 = User.create!(email: "carla@gmail.com", password: "password_user4", nickname: "Carlita")
-user5 = User.create!(email: "diego@gmail.com", password: "password_user5", nickname: "Don Diego")
-user6 = User.create!(email: "germaine@gmail.com", password: "password_user6", nickname: "Mamie Germaine")
-user7 = User.create!(email: "manu@gmail.com", password: "password_user7", nickname: "Hacker")
+user1 = User.create!(email: "murielle@gmail.com", password: "password_user1", nickname: "Mumu", url: "murielle.jpg")
+user2 = User.create!(email: "richard@gmail.com", password: "password_password_user2", nickname: "Riton", url: "richard.jpg")
+user3 = User.create!(email: "kevin@gmail.com", password: "password_user3", nickname: "Kev", url: "kevin.jpg")
+user4 = User.create!(email: "carla@gmail.com", password: "password_user4", nickname: "Carlita", url: "carla.jpg")
+user5 = User.create!(email: "diego@gmail.com", password: "password_user5", nickname: "Don Diego", url: "diego.jpg")
+user6 = User.create!(email: "germaine@gmail.com", password: "password_user6", nickname: "Mamie Germaine", url: "germaine.jpg")
+user7 = User.create!(email: "manu@gmail.com", password: "password_user7", nickname: "Hacker", url: "manu.jpg")
 
-user8 = User.create!(email: "rotissor@gmail.com", password: "password_user8", nickname: "Rotissor")
-user9 = User.create!(email: "bipbip@gmail.com", password: "password_user9", nickname: "Bip bip")
-user10 = User.create!(email: "partyboy@gmail.com", password: "password_user10", nickname: "Party boy")
-user11 = User.create!(email: "thevoice@gmail.com", password: "password_user11", nickname: "The voice")
-user12 = User.create!(email: "passepartout@gmail.com", password: "password_user12", nickname: "Passe partout")
-user13 = User.create!(email: "hulk@gmail.com", password: "password_user13", nickname: "Hulk")
-user14 = User.create!(email: "neo@gmail.com", password: "password_user14", nickname: "Neo")
-user15 = User.create!(email: "buzz@gmail.com", password: "password_user15", nickname: "Buzz")
-user16 = User.create!(email: "speedster@gmail.com", password: "password_user16", nickname: "Speedster")
+user8 = User.create!(email: "rotissor@gmail.com", password: "password_user8", nickname: "Rotissor", url: "hero.jpg")
+user9 = User.create!(email: "bipbip@gmail.com", password: "password_user9", nickname: "Bip bip", url: "hero.jpg")
+user10 = User.create!(email: "partyboy@gmail.com", password: "password_user10", nickname: "Party boy", url: "hero.jpg")
+user11 = User.create!(email: "thevoice@gmail.com", password: "password_user11", nickname: "The voice", url: "hero.jpg")
+user12 = User.create!(email: "passepartout@gmail.com", password: "password_user12", nickname: "Passe partout", url: "hero.jpg")
+user13 = User.create!(email: "hulk@gmail.com", password: "password_user13", nickname: "Hulk", url: "hero.jpg")
+user14 = User.create!(email: "neo@gmail.com", password: "password_user14", nickname: "Neo", url: "hero.jpg")
+user15 = User.create!(email: "buzz@gmail.com", password: "password_user15", nickname: "Buzz", url: "hero.jpg")
+user16 = User.create!(email: "speedster@gmail.com", password: "password_user16", nickname: "Speedster", url: "hero.jpg")
 
 puts "Users created!"
 

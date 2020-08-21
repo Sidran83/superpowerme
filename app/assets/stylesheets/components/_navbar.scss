@@ -2,6 +2,8 @@
   justify-content: space-between;
   background: #3F62F6;
   color : white;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -13,9 +15,22 @@
 }
 
 .navbar-lewagon .navbar-collapse a {
-  color : white;
+  color : black;
 }
 
 .search-form {
   display: inherit;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: black;
 }

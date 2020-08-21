@@ -1,0 +1,42 @@
+.container-superpower {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 20px;
+}
+
+.left-column {
+  width: 50%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.right-column {
+  width: 50%;
+  height: 100vh;
+  padding: 60px;
+}
+
+.superpower-description {
+  border-bottom: 1px solid #43484D;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+.superpower-description h1 {
+  padding-bottom: 30px;
+  font-size: 32px;
+}
+.superpower-description p {
+  font-size: 16px;
+}
+
+.form-wrapper {
+  padding-top: 30px;
+}
+
+// @media (max-width: 940px) {
+//   .left-column,
+//   .right-column {
+//     width: 100%;
+//   }
+// }
