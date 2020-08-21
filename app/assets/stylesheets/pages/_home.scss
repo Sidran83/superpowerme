@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 80px;
-  height: 110vh;
+  // height: 110vh;
 }
 
 
@@ -40,12 +40,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #3F62F6;
+  color: white;
   font-size: 32px;
   background-position: center;
   background-size: cover;
   margin: 15px;
   text-align: center;
   text-shadow: black;
-  border-radius: 5px
+  border-radius: 5px;
+  a {
+    color: white;
+    &:hover {
+      color: #3f62f6;
+    }
+  }
 }
